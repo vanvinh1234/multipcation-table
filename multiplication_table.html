@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background: aqua;
+    }
+
+    .content {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 10px;
+    }
+</style>
+<h3 style="text-align: center">Multiplication table</h3>
+<body>
+<div class="content">
+<script>
+    let multi;
+    multi="<table border='1' width='600' cellspacing='2' cellpading='3'>"
+    for(i=1; i<=9;i++){
+        multi= multi + "<tr>";
+        for(j=1; j<=9;j++){
+            multi=multi+"<td>" + j+'x'+i+ "=" +i*j + "</td>";
+        }multi=multi +"</tr>";
+    }multi=multi + "</table>";
+    document.write(multi);
+</script>
+</div>
+</body>
+</html>
